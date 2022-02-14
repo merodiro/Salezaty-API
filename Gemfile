@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'rails', '~> 5.2.6', '>= 5.2.6.2'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
-gem 'active_model_serializers'
+gem 'puma', '~> 4.3', '>= 4.3.11'
+gem 'active_model_serializers', '>= 0.10.2'
 gem 'rack-cors'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -30,7 +30,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   # Use Factory Girl for generating random test data
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.7.0'
 end
 
 group :development do
